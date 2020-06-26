@@ -6,10 +6,12 @@ using System.IO.Ports;
 public class M_A : MonoBehaviour {
     SerialPort sp = new SerialPort("COM5", 9600);
     int ON;
+    private AudioSource son;
     // Use this for initialization
     void Start () {     
         sp.Open();
         sp.ReadTimeout = 1;
+        son = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,10 +25,13 @@ public class M_A : MonoBehaviour {
 
                 if (ON == 10)
                 {
+                    
                     movimiento(sp.ReadByte());
+                    
                 }
                 else {
                     //se apaga el carro
+                    son.Play();
                 }
             }
             catch (System.Exception) { }

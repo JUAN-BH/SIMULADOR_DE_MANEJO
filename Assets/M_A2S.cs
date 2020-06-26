@@ -8,12 +8,15 @@ public class M_A2S : MonoBehaviour
 {
 
     SerialPort sp2 = new SerialPort("COM5", 9600);
+    //int ON;
+    //private AudioSource son;
 
     // Start is called before the first frame update
     void Start()
     {
         sp2.Open();
         sp2.ReadTimeout = 1;
+        //son = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,8 +26,11 @@ public class M_A2S : MonoBehaviour
         {
             try
             {
-                acelerar(sp2.ReadByte());
-                frenar(sp2.ReadByte());
+
+                    acelerar(sp2.ReadByte());
+                    frenar(sp2.ReadByte());
+
+               
             }
             catch (System.Exception) { }
         }

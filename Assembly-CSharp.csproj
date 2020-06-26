@@ -47,6 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\M_A.cs" />
      <Compile Include="Assets\M_A2S.cs" />
+     <Compile Include="Assets\M_A2SAR.cs" />
+     <Compile Include="Assets\M_ASARF.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Juan Manuel/Desktop/U/S6/RV/pf/prueba/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
