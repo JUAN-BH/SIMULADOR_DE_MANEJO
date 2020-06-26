@@ -44,7 +44,7 @@ public class M_ASARF : MonoBehaviour
     {
         if (direccion == 1)
         {
-            transform.Translate(Vector3.forward * 25f * Time.deltaTime);
+            transform.Translate(Vector3.forward * 17f * Time.deltaTime);
         }
     }
 
@@ -61,7 +61,7 @@ public class M_ASARF : MonoBehaviour
     {
         if (direccion == 5)
         {
-            transform.Translate(Vector3.back * 20f * Time.deltaTime);
+            transform.Translate(Vector3.back * 15f * Time.deltaTime);
         }
 
     }
